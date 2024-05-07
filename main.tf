@@ -3,7 +3,7 @@ resource "jenkins_folder" "folders" {
   name = lookup(element(var.jobs, count.index), "folder", null)
 }
 
-resource "jenkins_job" "job" {
+resource "jenkins_job" "jobs" {
   count = length(var.jobs)
   name     = lookup(element(var.jobs, count.index), "name", null)
   folder   = lookup(element(var.jobs, count.index), "folder", null)
