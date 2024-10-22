@@ -24,7 +24,7 @@ data "aws_instance" "jenkins" {
 }
 
 resource "aws_route53_record" "www" {
-  zone_id = "Z0519871SX8ZUH6ORUV5"
+  zone_id = "Z02331073VKZYZLSD9FII"
   name    = "jenkins.devtb.in.net"
   type    = "A"
   ttl     = 30
