@@ -25,7 +25,7 @@ data "aws_instance" "jenkins" {
 
 resource "aws_route53_record" "www" {
   zone_id = "Z0519871SX8ZUH6ORUV5"
-  name    = "jenkins.devtb.online"
+  name    = "jenkins.devtb.in.net"
   type    = "A"
   ttl     = 30
   records = [data.aws_instance.jenkins.public_ip]
