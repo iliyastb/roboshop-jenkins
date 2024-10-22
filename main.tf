@@ -19,14 +19,14 @@ resource "jenkins_job" "jobs" {
   }
 }
 
-data "aws_instance" "jenkins" {
+data "aws_instance" "jk" {
   instance_id = "i-09e791412076778a9"
 }
 
-resource "aws_route53_record" "www" {
+resource "aws_route53_record" "jenkins" {
   zone_id = "Z02331073VKZYZLSD9FII"
-  name    = "jenkins.devtb.in.net"
+  name    = "jenkins"
   type    = "A"
   ttl     = 30
-  records = [data.aws_instance.jenkins.public_ip]
+  records = [data.aws_instance.jk.public_ip]
 }

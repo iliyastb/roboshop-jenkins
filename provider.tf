@@ -6,8 +6,12 @@ terraform {
   }
 }
 
+data "aws_instance" "jenkins" {
+  instance_id = "i-09e791412076778a9"
+}
+
 provider "jenkins" {
-  server_url = "http://54.211.168.236:8080/"
+  server_url = "http://${data.aws_instance.jenkins.public_ip}:8080/"
   username   = data.aws_ssm_parameter.jenkins_user.value
   password   = data.aws_ssm_parameter.jenkins_pass.value
 }
