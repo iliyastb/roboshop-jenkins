@@ -7,7 +7,7 @@ terraform {
 }
 
 data "aws_instance" "jenkins" {
-  instance_id = "i-09e791412076778a9"
+  instance_id = "i-0ebaf7c9ba6fe017f"
 }
 
 provider "jenkins" {
