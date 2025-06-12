@@ -19,3 +19,15 @@ resource "jenkins_job" "jobs" {
 #    ignore_changes = [template]
 #  }
 }
+
+#data "aws_instance" "jenkins" {
+#  id = "i-0ebaf7c9ba6fe017f"
+#}
+#
+#resource "aws_route53_record" "jenkins" {
+#  zone_id = "Z02331073VKZYZLSD9FII"
+#  name    = "jenkins.devtb.in.net"
+#  type    = "A"
+#  ttl     = 30
+#  records = [data.aws_instance.jenkins.public_ip]
+#}
