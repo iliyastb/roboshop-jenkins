@@ -20,6 +20,8 @@ resource "jenkins_job" "jobs" {
 #  }
 }
 
+// the following block is to create the dns record of new public ip address
+
 #data "aws_instance" "jenkins" {
 #  id = "i-0ebaf7c9ba6fe017f"
 #}
