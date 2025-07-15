@@ -2,7 +2,11 @@ variable "folders" {
   default = ["Infra", "CI-Pipeline"]
 }
 
-variable "jobs" {
+variable "s-jobs" {
+  default = []
+}
+
+variable "m-jobs" {
   default = [
     { name = "roboshop", folder = "Infra", repo_url = "https://github.com/iliyastb/roboshop-infra.git" },
     { name = "frontend", folder = "CI-Pipeline", repo_url = "https://github.com/iliyastb/frontend.git" },
