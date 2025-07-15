@@ -3,7 +3,9 @@ variable "folders" {
 }
 
 variable "s-jobs" {
-  default = []
+  default = [
+    { name = "roboshop", folder = "Infra", repo_url = "https://github.com/iliyastb/roboshop-infra.git" }
+  ]
 }
 
 variable "m-jobs" {
