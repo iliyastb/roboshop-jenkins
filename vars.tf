@@ -10,7 +10,6 @@ variable "s-jobs" {
 
 variable "m-jobs" {
   default = [
-    { name = "roboshop", folder = "Infra", repo_url = "https://github.com/iliyastb/roboshop-infra.git" },
     { name = "frontend", folder = "CI-Pipeline", repo_url = "https://github.com/iliyastb/frontend.git" },
     { name = "catalogue", folder = "CI-Pipeline", repo_url = "https://github.com/iliyastb/catalogue.git" },
     { name = "user", folder = "CI-Pipeline", repo_url = "https://github.com/iliyastb/user.git" },
