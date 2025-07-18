@@ -4,7 +4,8 @@ variable "folders" {
 
 variable "s-jobs" {
   default = [
-    { name = "roboshop", folder = "Infra", repo_url = "https://github.com/iliyastb/roboshop-infra.git" }
+    { name = "roboshop", folder = "Infra", repo_url = "https://github.com/iliyastb/roboshop-infra.git", filename: "Jenkinsfile" },
+    { name = "app-deployment", folder = "Infra", repo_url = "https://github.com/iliyastb/roboshop-infra.git", filename: "Jenkinsfile-deployment" }
   ]
 }
 
