@@ -18,6 +18,7 @@ variable "m-jobs" {
     { name = "cart", folder = "CI-Pipeline", repo_url = "https://github.com/iliyastb/cart.git" },
     { name = "shipping", folder = "CI-Pipeline", repo_url = "https://github.com/iliyastb/shipping.git" },
     { name = "payment", folder = "CI-Pipeline", repo_url = "https://github.com/iliyastb/payment.git" },
-    { name = "aws-ssm-param-store", folder = "CI-Pipeline", repo_url = "https://github.com/iliyastb/aws-ssm-param-store.git" }
+    { name = "aws-ssm-param-store", folder = "CI-Pipeline", repo_url = "https://github.com/iliyastb/aws-ssm-param-store.git" },
+    { name = "schema-loader", folder = "CI-Pipeline", repo_url = "https://github.com/iliyastb/schema-loader.git" }
   ]
 }
